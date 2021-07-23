@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Skinet\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\Skinet\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "d:\\Skinet\\Core\\Core.csproj": {
+    "D:\\Skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Skinet\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "d:\\Skinet\\Core\\Core.csproj",
+        "projectPath": "D:\\Skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\anaru\\.nuget\\packages\\",
-        "outputPath": "d:\\Skinet\\Core\\obj\\",
+        "outputPath": "D:\\Skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -32,6 +32,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -43,7 +44,12 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.16, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -65,14 +71,14 @@
         }
       }
     },
-    "d:\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Skinet\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Skinet\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "d:\\Skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\Skinet\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\anaru\\.nuget\\packages\\",
-        "outputPath": "d:\\Skinet\\Infrastructure\\obj\\",
+        "outputPath": "D:\\Skinet\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -85,17 +91,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "d:\\Skinet\\Core\\Core.csproj": {
-                "projectPath": "d:\\Skinet\\Core\\Core.csproj"
+              "D:\\Skinet\\Core\\Core.csproj": {
+                "projectPath": "D:\\Skinet\\Core\\Core.csproj"
               }
             }
           }
@@ -107,8 +114,17 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.16, )"
@@ -117,11 +133,21 @@
               "target": "Package",
               "version": "[3.1.16, )"
             },
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[6.11.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.62, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.57.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.11.1, )"
             }
           },
           "imports": [
@@ -134,6 +160,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.409\\RuntimeIdentifierGraph.json"
         }
       }

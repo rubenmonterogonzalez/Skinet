@@ -1,0 +1,12 @@
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Skinet\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.deps.json
+D:\Skinet\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.dll
+D:\Skinet\Infrastructure\bin\Debug\netstandard2.1\Infrastructure.pdb
+D:\Skinet\Infrastructure\bin\Debug\netstandard2.1\Core.dll
+D:\Skinet\Infrastructure\bin\Debug\netstandard2.1\Core.pdb
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CopyComplete
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.dll
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.pdb
+D:\Skinet\Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.AssemblyReference.cache
